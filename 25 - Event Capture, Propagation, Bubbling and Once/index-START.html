@@ -43,6 +43,22 @@
 <button></button>
 <script>
 
+// AT 4:00 IN VID
+// https://www.youtube.com/watch?v=F1anRyL37lE&ab_channel=WesBos
+
+  const divs = document.querySelectorAll('div');
+
+  function logText(e) {
+    console.log(this.classList.value);
+  }
+
+  divs.forEach(div => div.addEventListener('click', logText));
+
+// how bubbling works, when you click something it starts from farthest out
+// and works its way in:
+// ie it listens for you to click, it sees bod, div 1, div 2, div 3, button, etc
+// but when it captures/triggers whatever event, it starts from the furthest
+// in and works its way out
 </script>
 </body>
 </html>
