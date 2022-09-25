@@ -43,6 +43,8 @@
 <button></button>
 <script>
 
+  // div
+
 // AT 4:00 IN VID
 // https://www.youtube.com/watch?v=F1anRyL37lE&ab_channel=WesBos
 
@@ -50,9 +52,15 @@
 
   function logText(e) {
     console.log(this.classList.value);
+
+   
   }
 
   divs.forEach(div => div.addEventListener('click', logText));
+    once: true;
+    // THIS UNBINDS THE EVENT LISTENER AFTER 'CLICK'
+    // USE CASE: CHECKOUT PROCESS PAYMENT BUTTON, ONLY LET THEM CLICK ONCE
+    
 
 // how bubbling works, when you click something it starts from farthest out
 // and works its way in:
